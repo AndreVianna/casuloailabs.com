@@ -582,6 +582,60 @@ section {
   color: var(--accent);
 }
 
+/* ===== WHY US ===== */
+#why-us { background: var(--bg-primary); }
+
+.why-us-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.why-us-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.why-us-text p { margin-bottom: 1.25rem; }
+.why-us-text strong { color: var(--text-primary); }
+
+.proof-callout {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.proof-callout h4 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.proof-callout p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-callout {
+  border-color: var(--border-accent);
+  background: linear-gradient(135deg, var(--bg-card), rgba(212, 168, 83, 0.05));
+}
+
+.callout-question {
+  font-size: 1.2rem;
+  color: var(--accent) !important;
+  margin-top: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .why-us-content { grid-template-columns: 1fr; }
+}
+
 /* ===== PROOF POINTS ===== */
 #proof { background: var(--bg-secondary); }
 
